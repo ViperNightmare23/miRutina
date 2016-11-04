@@ -1,11 +1,16 @@
 <!doctype html>
 <html>
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 <head>
 <meta charset="UTF-8">
 
 <!-- ---------------------------------------------------------------------------- -->
 
 <style>
+    img {
+       /*width: 100%;*/
+       /*height: auto;*/
+    }
     .header {
        background-color: #585858;
        height: 55px;
@@ -17,17 +22,22 @@
        overflow: hidden;
     }
    .div1 {
+       width: 100%;
        background-color: white;
        width: 950px;
        height: 425px;
        overflow: hidden;
+       /*background-size: contain;*/
     }
     .div2 {
+       width: 100%;
        background-image: url(images/bg.svg);
        background-size: cover;
        width: 950px;
        height: 425px;
        overflow: hidden;
+       background-repeat: no-repeat;
+       /*background-size: contain;*/
     }
     .p {
        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -43,7 +53,7 @@
     <div id="section1" class="div1">
     <img src="images/Logo-miRutina.png" height="70" width="180" style="position:absolute; top:105px; left:215px;">
     <img src="images/mockup-1.png" height="410" width="510" style="position:absolute; top:115px; left:535px; clip: rect(0px,510px,373px,0px);">
-      <div style="position: absolute; top:150px; left:215px; width:500px; height:100px">
+      <div style="position: absolute; top:150px; left:215px; width:500px; height:100px" class="responsivediv">
         <font color="#00aaff" size="8"><p align="left"> Administra<br>tu gimnasio. </p></font>
         <font color="#333333" size="5"><p align="left"> 
             Brinda atención personalizada y <br>
@@ -54,7 +64,7 @@
 
     <div id="section2" class="div2">
     <img src="images/mockup-3.png" height="500" width="250" style="position:absolute; top:585px; left:280px; clip: rect(0px,245px,328px,0px);">
-     <div style="position: absolute; top:500px; left:600px; width:500px; height:100px">
+     <div style="position: absolute; top:500px; left:600px; width:500px; height:100px" class="responsivediv">
         <font color="white" size="8"><p align="left"><i> Rutinas para <br> todos tus <br> subscriptores. </i></p></font>
         <font color="white" size="5"><p align="left"> 
             miRutina te da las herramientas para <br>
@@ -65,7 +75,7 @@
 
     <div id="section3" class="div1">
     <img src="images/mockup-2.png" height="445" width="372" style="position:absolute; top:940px; left:675px; clip: rect(0px,372px,398px,0px);">
-      <div style="position: absolute; top:950px; left:215px; width:500px; height:100px">
+      <div style="position: absolute; top:950px; left:215px; width:500px; height:100px" class="responsivediv">
         <font color="#00aaff" size="8"><p align="left"> Procesos <br> eficientes.  </p></font>
         <font color="#333333" size="5"><p align="left"> 
             Deja que tus usuarios consulten horarios, <br>
@@ -77,7 +87,7 @@
 
     <div id="section4" class="div2">
     <img src="images/mockup-4.png" height="460" width="245" style="position:absolute; top:1435px; left:275px; clip: rect(0px,245px,328px,0px);">
-      <div style="position: absolute; top:1380px; left:600px; width:500px; height:100px">
+      <div style="position: absolute; top:1380px; left:600px; width:500px; height:100px" class="responsivediv">
         <font color="white" size="8"><p align="left"><i> Vende espacios <br> publicitarios. </i></p></font>
         <font color="white" size="5"><p align="left"> 
             Aprovecha tu mercado. Vende <br>
@@ -88,7 +98,7 @@
     </div>
 
     <div id="footer" class="footer">
-      <div style="position: absolute; top:1775px; left:250px; width:550px; height:100px">
+      <div style="position: absolute; top:1775px; left:250px; width:550px; height:100px" class="responsivediv">
         <font color="white" size="8">
         <p align="left"> ¿Te interesa implementar la <br> aplicación en tu gimnasio? </p>
         </font>
